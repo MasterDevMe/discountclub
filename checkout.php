@@ -15,6 +15,7 @@
 <meta property="og:url" content="https://chris4b895c.clickfunnels.com/order-form30097546">
 <meta property="og:type" content="website">
 <link rel="stylesheet" media="screen" href="https://www.clickfunnels.com/assets/lander.css">
+<link rel="stylesheet" href="css/custom.css"> 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7COswald:400,700%7CDroid+Sans:400,700%7CRoboto:400,700%7CLato:400,700%7CPT+Sans:400,700%7CSource+Sans+Pro:400,700%7CNoto+Sans:400,700%7CPT+Sans:400,700%7CUbuntu:400,700%7CBitter:400,700%7CPT+Serif:400,700%7CRokkitt:400,700%7CDroid+Serif:400,700%7CRaleway:400,700%7CInconsolata:400,700" rel="stylesheet" type="text/css">
 <meta property="cf:funnel_id" content="ckdBUDI4Sm1xcEhWaHBCVW1OM05iQT09LS0reVJWSlhEc1NKTmZ0RFB0OW5tcnRnPT0=--3f8cdcca07000c49297426d9cddd5e82fc84c8da">
@@ -94,19 +95,19 @@
 <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize12" style="text-align: left; color: rgba(47, 47, 47, 0.8);" data-bold="inherit" contenteditable="false"><b>Full Name:</b></div>
 </div>
 <div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_input-42716" data-de-type="input" data-de-editing="false" data-title="input form" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer;" type="name" aria-disabled="false">
-<input placeholder="Full Name..." name="name" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
+<input placeholder="Full Name..." required="" name="name" id="name" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-60739" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="display: block; margin-top: 20px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize12" style="text-align: left; color: rgba(47, 47, 47, 0.8);" data-bold="inherit" contenteditable="false"><b>Email Address:</b></div>
 </div>
 <div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="input-95771" data-de-type="input" data-de-editing="false" data-title="input form" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer;" type="email" aria-disabled="false">
-<input placeholder="Email Address..." name="email" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
+<input placeholder="Email Address..." name="email" id="email" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-83599" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="display: block; margin-top: 20px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize12" style="text-align: left; color: rgba(47, 47, 47, 0.8);" data-bold="inherit" contenteditable="false"><b>Phone Number:</b></div>
 </div>
 <div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="input-23729" data-de-type="input" data-de-editing="false" data-title="input form" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer;" type="phone" aria-disabled="false">
-<input placeholder="Phone Number..." name="phone" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
+<input placeholder="Phone Number..." name="phone" id="phone" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-85450" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="display: block; margin-top: 30px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize18" style="text-align: left;" data-bold="inherit" contenteditable="false">
@@ -121,19 +122,19 @@
 <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize12" style="text-align: left; color: rgba(47, 47, 47, 0.8);" data-bold="inherit" contenteditable="false"><b>Street Address:</b></div>
 </div>
 <div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="input-93393" data-de-type="input" data-de-editing="false" data-title="input form" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; display: block; outline: none; cursor: pointer;" type="address" aria-disabled="false">
-<input placeholder="Street Address...." name="address" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
+<input placeholder="Street Address...." name="address" id="address" required="" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-90671" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="display: block; margin-top: 20px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize12" style="text-align: left; color: rgba(47, 47, 47, 0.8);" data-bold="inherit" contenteditable="false"><b>City:</b></div>
 </div>
 <div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="input-37283" data-de-type="input" data-de-editing="false" data-title="input form" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; display: block; outline: none; cursor: pointer;" type="city" aria-disabled="false">
-<input placeholder="City Name..." name="city" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
+<input placeholder="City Name..." name="city" id="City" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-98563" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="display: block; margin-top: 20px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize12" style="text-align: left; color: rgba(47, 47, 47, 0.8);" data-bold="inherit" contenteditable="false"><b>State / Province:</b></div>
 </div>
 <div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="input-70339" data-de-type="input" data-de-editing="false" data-title="input form" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; display: block; outline: none; cursor: pointer;" type="state" aria-disabled="false">
-<input placeholder="State / Province..." name="state" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
+<input placeholder="State / Province..." name="state" id="states" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-35044" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="display: block; margin-top: 20px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize12" style="text-align: left; color: rgba(47, 47, 47, 0.8);" data-bold="inherit" contenteditable="false"><b>Country:</b></div>
@@ -145,7 +146,7 @@
 <input type="text" placeholder="State / Province..." name="state" class="elInput elS1State elInput100 elAlign_left elInputSmall elInputStyl0 elInputBR5 elInputI0 elInputIBlack elInputIRight required1 elInputStyle1 elInputSmall elInputBG1" data-type="extra" style="float: left; width: 65%; margin-top: 20px;">
 <input type="text" placeholder="Zip Code..." name="zip" class="elInput elS1Zip elInput100 elAlign_left elInputSmall elInputStyl0 elInputBR5 elInputI0 elInputIBlack elInputIRight required1 elInputStyle1 elInputSmall elInputBG1" data-type="extra" style="float: left; width: 30%; margin-left: 5%; margin-top: 20px;">
 </div>
-<select name="country" class="elInput elInput100 elAlign_left elInputSmall elInputStyl0 elInputBR5 elInputI0 elInputIBlack elInputIRight required1 elInputStyle1 elInputSmall elInputBG1" data-type="extra" style="clear: left; margin-top: 20px;">
+<select name="country" id="country" class="elInput elInput100 elAlign_left elInputSmall elInputStyl0 elInputBR5 elInputI0 elInputIBlack elInputIRight required1 elInputStyle1 elInputSmall elInputBG1" data-type="extra" style="clear: left; margin-top: 20px;">
 <option value="">Select Country</option>
 <option value="">------------------------------</option>
 <option value="United States">United States</option>
@@ -400,7 +401,7 @@
 <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize12" style="text-align: left; color: rgba(47, 47, 47, 0.8);" data-bold="inherit" contenteditable="false"><b>Zip Code / Postal Code:</b></div>
 </div>
 <div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="input-56260" data-de-type="input" data-de-editing="false" data-title="input form" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; display: block; outline: none; cursor: pointer;" type="zip" aria-disabled="false">
-<input placeholder="Zip Code / Postal Code..." name="zip" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
+<input placeholder="Zip Code / Postal Code..." id="postalCode" name="zip" class="elInput elInput100 elAlign_left elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight elInputStyle1 elInputSmall required1" data-type="extra" type="text">
 </div>
 </div>
 </div>
@@ -522,7 +523,7 @@ Dynamically Updated
 </div>
 </div>
 <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" id="tmp_button-31077" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer;" aria-disabled="false">
-<a  class="elButton elButtonSubtle elButtonSize1 elButtonColor1 elButtonFull" style="color: rgb(255, 255, 255); background-color: rgb(14, 141, 199);">
+<a  href="#" class="elButton elButtonSubtle elButtonSize1 elButtonColor1 elButtonFull" id="orderbtn" style="color: rgb(255, 255, 255); background-color: rgb(14, 141, 199);">
 <span class="elButtonMain">Complete Order</span>
 <span class="elButtonSub">Get Instant Access</span>
 </a>
@@ -1060,81 +1061,37 @@ CFFacebookMessengerCheckbox.endpoint = "https://app.clickfunnels.com/facebook_us
 <script>
   $(document).ready(function () { 
      
-  $('#link').click(function (){
-    $('#LoadingDiv').css('display','block');
-       var sfname = $('#f_name').val();
-       var slname = $('#l_name').val();
-       var sEmail = $('#email').val();
-      
-   if ($.trim(sfname).length == 0 || sfname == "" ) {
-   $(".fname_error").css('display','block');
-   $('#LoadingDiv').css('display','none');
-   
-   }else {
-     $(".fname_error").css('display','none');
-   }
-   if ($.trim(slname).length == 0 || slname == "" ) {
-   $(".lname_error").css('display','block');
-   $('#LoadingDiv').css('display','none');
-   
-   }else {
-     $(".lname_error").css('display','none');
-   }
-   
-   if ($.trim(sEmail).length == 0 || sEmail == "" ) {
-   $(".email_error").css('display','block');
-   $('#LoadingDiv').css('display','none');
-   return false;
-   }else{
-     $(".email_error").css('display','none');
-   }
-   
-   if (validateEmail(sEmail)) {
-     $(".vemail_error").css('display','none');
-   console.log("valid Email");
-   }else {
-   $(".vemail_error").css('display','block');
-   $('#LoadingDiv').css('display','none');
-   return false;
-   }
-   
-   
-   
-   
-     event.preventDefault();
-          $.post(
-            "<?php  echo "//".$_SERVER['SERVER_NAME']."/konnective.php"; ?>",
-             $('#orderform' ).serialize(),
-             function(data){
-             var response = JSON.parse(data);
-             if(response.result == "ERROR"){
-               $('#LoadingDiv').css('display','none');
-                //alert(response.message);
-             }
-             if(response.result == "SUCCESS"){ 
-                $('#LoadingDiv').css('display','none');								
-                $('.step_step1').css('display','none');
-                $('.step_step2').css('display','block');
-                $('.StepProgress').addClass('foo');
-             }
-             }
-            )
-        });
-        $('.goBacktoStepOneOrder').click(function(){ 
-         $('#LoadingDiv').css('display','block');
-          $('.step_step2').css('display','none');					 
-          $('.step_step1').css('display','block');
-          $('.StepProgress').removeClass('foo');
-          $('#LoadingDiv').css('display','none');
-        });		 
-        
+  $('#orderbtn').click(function (){
+    if(validate_form())
+    {
+      event.preventDefault();
+      $.post(
+        "<?php  echo "//".$_SERVER['SERVER_NAME']."/konnective.php"; ?>",
+          $('#orderform' ).serialize(),
+          function(data){
+          var response = JSON.parse(data);
+          if(response.result == "ERROR"){
+            $('#LoadingDiv').css('display','none');
+            //alert(response.message);
+          }
+          if(response.result == "SUCCESS"){ 
+            $('#LoadingDiv').css('display','none');								
+            $('.step_step1').css('display','none');
+            $('.step_step2').css('display','block');
+            $('.StepProgress').addClass('foo');
+          }
+          }
+      )
+    }
+  });
+       
  });
 
 </script>
 
+<script type="text/javascript" src="js/script-mobile.js"></script>
 
-
-<script type="text/javascript" src="https://app.clickfunnels.com/mailcheck.min.js"></script><script type="text/javascript">for(var ccTLDs=["ar","at","au","be","br","ca","ch","cl","cn","cz","de","dk","es","eu","fi","fr","hk","hu","in","it","jp","kr","mx","nl","no","nz","pl","pt","ru","se","tk","tr","tw","uk","us"],i=0;i<ccTLDs.length;i++){var ccTLD=ccTLDs[i];Mailcheck.defaultTopLevelDomains.push(ccTLD),Mailcheck.defaultTopLevelDomains.push("com."+ccTLD)}var currentDefaultDomains=Mailcheck.defaultDomains.slice();for(i=0;i<currentDefaultDomains.length;i++)for(var defaultDomain=currentDefaultDomains[i],j=0;j<ccTLDs.length;j++){ccTLD=ccTLDs[j];Mailcheck.defaultDomains.push(defaultDomain+"."+ccTLD)}Mailcheck.defaultDomains.push("clickfunnels.com"),$('input[name="email"]').on("blur",function(){_this=this,$(this).mailcheck({suggested:function(e,i){$(".email_suggestion").remove(),$(e).parent().append('<div class="email_suggestion">Did you mean <a href="#">'+i.full+"</a>?</div>")},empty:function(){$(".email_suggestion").remove()}}),$.each("chenowith52@gmail.com, test@test.com, test@gmail.com, test@mail.com".split(","),function(e,i){0<=$(_this).val().search(i.trim())&&($(".email_suggestion").remove(),$(_this).val(""),$(_this).after('<div class="email_suggestion">Please use real email.</div>'))})}),$("body").on("click",".email_suggestion a",function(){$('input[name="email"]').val($(this).text())});</script><script type="text/javascript">function getURLParameter(e){return decodeURIComponent((RegExp(e+"=(.+?)(&|$)").exec(location.search)||[,null])[1])}function getURLParameterExact(e){for(var t=window.location.search.substring(1).split("&"),n=0;n<t.length;n++){var r=t[n].split("=");if(r[0]==e)return r[1]}}</script><script type="text/javascript">$(function(){"null"!=getURLParameter("email")&&($('input[name="contact[email]"]').val(getURLParameterExact("email")),$("[name=email]").val(getURLParameterExact("email"))),"null"!=getURLParameter("name")&&($('input[name="contact[name]"]').val(getURLParameterExact("name")),$("[name=name]").val(getURLParameterExact("name"))),"null"!=getURLParameter("first_name")&&($('input[name="contact[first_name]"]').val(getURLParameter("first_name")),$("[name=first_name]").val(getURLParameter("first_name"))),"null"!=getURLParameter("last_name")&&($('input[name="contact[last_name]"]').val(getURLParameter("last_name")),$("[name=last_name]").val(getURLParameter("last_name"))),"null"!=getURLParameter("address_1")&&($('input[name="contact[address_1]"]').val(getURLParameter("address")),$("[name=address_1]").val(getURLParameter("address_1"))),"null"!=getURLParameter("address_2")&&($('input[name="contact[address_1]"]').val(getURLParameter("address")),$("[name=address_2]").val(getURLParameter("address_2"))),"null"!=getURLParameter("city")&&($('input[name="contact[city]"]').val(getURLParameter("city")),$("[name=city]").val(getURLParameter("city"))),"null"!=getURLParameter("state")&&($('input[name="contact[state]"]').val(getURLParameter("state")),$("[name=state]").val(getURLParameter("state"))),"null"!=getURLParameter("zip")&&($('input[name="contact[zip]"]').val(getURLParameter("zip")),$("[name=zip]").val(getURLParameter("zip"))),"null"!=getURLParameter("phone")&&($('input[name="contact[phone]"]').val(getURLParameter("phone")),$("[name=phone]").val(getURLParameter("phone")))});</script><script>Nmi = true;</script>
+<!-- <script type="text/javascript" src="https://app.clickfunnels.com/mailcheck.min.js"></script><script type="text/javascript">for(var ccTLDs=["ar","at","au","be","br","ca","ch","cl","cn","cz","de","dk","es","eu","fi","fr","hk","hu","in","it","jp","kr","mx","nl","no","nz","pl","pt","ru","se","tk","tr","tw","uk","us"],i=0;i<ccTLDs.length;i++){var ccTLD=ccTLDs[i];Mailcheck.defaultTopLevelDomains.push(ccTLD),Mailcheck.defaultTopLevelDomains.push("com."+ccTLD)}var currentDefaultDomains=Mailcheck.defaultDomains.slice();for(i=0;i<currentDefaultDomains.length;i++)for(var defaultDomain=currentDefaultDomains[i],j=0;j<ccTLDs.length;j++){ccTLD=ccTLDs[j];Mailcheck.defaultDomains.push(defaultDomain+"."+ccTLD)}Mailcheck.defaultDomains.push("clickfunnels.com"),$('input[name="email"]').on("blur",function(){_this=this,$(this).mailcheck({suggested:function(e,i){$(".email_suggestion").remove(),$(e).parent().append('<div class="email_suggestion">Did you mean <a href="#">'+i.full+"</a>?</div>")},empty:function(){$(".email_suggestion").remove()}}),$.each("chenowith52@gmail.com, test@test.com, test@gmail.com, test@mail.com".split(","),function(e,i){0<=$(_this).val().search(i.trim())&&($(".email_suggestion").remove(),$(_this).val(""),$(_this).after('<div class="email_suggestion">Please use real email.</div>'))})}),$("body").on("click",".email_suggestion a",function(){$('input[name="email"]').val($(this).text())});</script><script type="text/javascript">function getURLParameter(e){return decodeURIComponent((RegExp(e+"=(.+?)(&|$)").exec(location.search)||[,null])[1])}function getURLParameterExact(e){for(var t=window.location.search.substring(1).split("&"),n=0;n<t.length;n++){var r=t[n].split("=");if(r[0]==e)return r[1]}}</script><script type="text/javascript">$(function(){"null"!=getURLParameter("email")&&($('input[name="contact[email]"]').val(getURLParameterExact("email")),$("[name=email]").val(getURLParameterExact("email"))),"null"!=getURLParameter("name")&&($('input[name="contact[name]"]').val(getURLParameterExact("name")),$("[name=name]").val(getURLParameterExact("name"))),"null"!=getURLParameter("first_name")&&($('input[name="contact[first_name]"]').val(getURLParameter("first_name")),$("[name=first_name]").val(getURLParameter("first_name"))),"null"!=getURLParameter("last_name")&&($('input[name="contact[last_name]"]').val(getURLParameter("last_name")),$("[name=last_name]").val(getURLParameter("last_name"))),"null"!=getURLParameter("address_1")&&($('input[name="contact[address_1]"]').val(getURLParameter("address")),$("[name=address_1]").val(getURLParameter("address_1"))),"null"!=getURLParameter("address_2")&&($('input[name="contact[address_1]"]').val(getURLParameter("address")),$("[name=address_2]").val(getURLParameter("address_2"))),"null"!=getURLParameter("city")&&($('input[name="contact[city]"]').val(getURLParameter("city")),$("[name=city]").val(getURLParameter("city"))),"null"!=getURLParameter("state")&&($('input[name="contact[state]"]').val(getURLParameter("state")),$("[name=state]").val(getURLParameter("state"))),"null"!=getURLParameter("zip")&&($('input[name="contact[zip]"]').val(getURLParameter("zip")),$("[name=zip]").val(getURLParameter("zip"))),"null"!=getURLParameter("phone")&&($('input[name="contact[phone]"]').val(getURLParameter("phone")),$("[name=phone]").val(getURLParameter("phone")))});</script><script>Nmi = true;</script> -->
 <script type="text/javascript" src="https://app.clickfunnels.com/assets/pushcrew.js"></script><meta name='can_calculate_taxes' content='false'></body>
 </html>
 

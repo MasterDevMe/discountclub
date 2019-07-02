@@ -1,0 +1,13 @@
+input.error {
+    border: 1px solid #ff0000 !important;
+}
+select.error {
+    border: 1px solid #ff0000 !important;
+}
+
+input.valid {
+    border: 1px solid #93DC69 !important;
+}
+select.valid {
+    border: 1px solid #93DC69 !important;
+}
