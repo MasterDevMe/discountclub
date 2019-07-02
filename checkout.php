@@ -1103,8 +1103,8 @@ CFFacebookMessengerCheckbox.endpoint = "https://app.clickfunnels.com/facebook_us
    
      event.preventDefault();
           $.post(
-            "<?php  echo "//".$_SERVER['SERVER_NAME']."/includes/konnective.php"; ?>",
-             $('#leadform' ).serialize(),
+            "<?php  echo "//".$_SERVER['SERVER_NAME']."/konnective.php"; ?>",
+             $('#orderform' ).serialize(),
              function(data){
              var response = JSON.parse(data);
              if(response.result == "ERROR"){
