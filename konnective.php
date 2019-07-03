@@ -29,8 +29,8 @@ function NewLeadKonnective($campaign_id,$fields_fname,$fields_lname,$fields_addr
 	    $C3 = "";
 	    $click_id = "";
 	  }
-	  $fields =   array('loginId'=>'nexgenapi',
-						'password'=>'n3Xg3n_api420gogo',
+	  $fields =   array('loginId'=>'jimdev',
+						'password'=>'Jim123#',
 						'campaignId'=>$campaign_id,
 						'firstName'=>trim($fields_fname),
 						'lastName'=>trim($fields_lname),
@@ -114,8 +114,8 @@ function NewOrderWithLeadKonnective($productId, $upsale = NULL, $shipping_price 
 	    $C3 = "";
 	    $click_id = "";
 	  }
-	  $fields1 = array('loginId'=>'nexgenapi',
-						'password'=>'n3Xg3n_api420gogo',
+	  $fields1 = array('loginId'=>'jimdev',
+						'password'=>'Jim123#',
 					  'orderId'=> $order_info['orderId'],
 					  'paySource' => 'CREDITCARD',
 					  'firstName'=> $order_info['firstName'],
@@ -127,10 +127,10 @@ function NewOrderWithLeadKonnective($productId, $upsale = NULL, $shipping_price 
 						'country'=> $order_info['country'], 
 						'phoneNumber'=>$order_info['phoneNumber'], 
 						'emailAddress'=>$order_info['emailAddress'], 
-					  'cardNumber'=>$card_info['card_num'],
-					  'cardMonth'=>$card_info['exp_month'],
-					  'cardYear'=>$card_info['exp_year'],
-					  'cardSecurityCode'=>$card_info['cvc'],
+					  'cardNumber'=>$card_info['credit_card_number'],
+					  'cardMonth'=>$card_info['credit_card_exp_date_month'],
+					  'cardYear'=>$card_info['credit_card_exp_date_year'],
+					  'cardSecurityCode'=>$card_info['security_code'],
 					  'tranType'=>'Sale',
 					  'product1_id'=>$productId,
 					  'campaignId'=>$order_info['campaignId'],
@@ -169,36 +169,36 @@ function NewOrderWithLeadKonnective($productId, $upsale = NULL, $shipping_price 
         curl_setopt($Curl_Session, CURLOPT_POSTFIELDS, http_build_query($fields));
         curl_setopt($Curl_Session, CURLOPT_RETURNTRANSFER, 1);
         $content = curl_exec($Curl_Session);
-	    $ret = json_decode($content);
+	    //$ret = json_decode($content);
 	
-	if( $ret->result == 'SUCCESS' ){
-	    if($upsale != NULL){
-	     $data2 =  $ret->message;
+// 	if( $ret->result == 'SUCCESS' ){
+// 	    if($upsale != NULL){
+// 	     $data2 =  $ret->message;
 		
-		$orderId = $data2->orderId;
-	    $upsale_products = array_unique($upsale);
-		foreach($upsale_products as $product_id){
-	    $fields2 = array(   'loginId'=>'nexgenapi',
-                            'password'=>'n3Xg3n_api420gogo',
-							'method'=>'NewOrderCardOnFile',
-							'orderId'=>$orderId,
-							'productId'=>$product_id,
-							'product1_shipPrice'=>'0.00');
+// 		$orderId = $data2->orderId;
+// 	    $upsale_products = array_unique($upsale);
+// 		foreach($upsale_products as $product_id){
+// 	    $fields2 = array(   'loginId'=>'nexgenapi',
+//                             'password'=>'n3Xg3n_api420gogo',
+// 							'method'=>'NewOrderCardOnFile',
+// 							'orderId'=>$orderId,
+// 							'productId'=>$product_id,
+// 							'product1_shipPrice'=>'0.00');
 					  
 				  
 		
-	$Curl_Session = curl_init();
-	curl_setopt($Curl_Session,CURLOPT_URL,'https://api.konnektive.com/upsale/import/');
-	curl_setopt($Curl_Session, CURLOPT_POST, 1);
-	curl_setopt($Curl_Session, CURLOPT_SSL_VERIFYPEER, false);
-	curl_setopt($Curl_Session, CURLOPT_POSTFIELDS, http_build_query($fields2));
-	curl_setopt($Curl_Session, CURLOPT_RETURNTRANSFER, 1);
-        $content1 = curl_exec($Curl_Session);
+// 	$Curl_Session = curl_init();
+// 	curl_setopt($Curl_Session,CURLOPT_URL,'https://api.konnektive.com/upsale/import/');
+// 	curl_setopt($Curl_Session, CURLOPT_POST, 1);
+// 	curl_setopt($Curl_Session, CURLOPT_SSL_VERIFYPEER, false);
+// 	curl_setopt($Curl_Session, CURLOPT_POSTFIELDS, http_build_query($fields2));
+// 	curl_setopt($Curl_Session, CURLOPT_RETURNTRANSFER, 1);
+//         $content1 = curl_exec($Curl_Session);
 		
-	 }
-	}
-}	
-    unset($_SESSION['oto']);
+// 	 }
+// 	}
+// }	
+    //unset($_SESSION['oto']);
 	return $content;
 }
 
@@ -515,30 +515,53 @@ function CreditCardCompany($ccNum)
 }
 
 if($_POST){
-if(isset($_POST['createLead'])){	
-$first_name  = $_POST['fname'];
-$last_name  = $_POST['lname'];
+
+$campaign_path = "http://".$_SERVER['SERVER_NAME']."/";
+$fullname = $_POST['name'];
+$fullname = explode(" ",$fullname);
+$first_name  = $fullname[0];
+$last_name  = $fullname[1];
+if($last_name=='') $last_name = 'Test';
 $email  = $_POST['email'];
 $phone  = $_POST['phone'];
-$shipping_address1  = $_POST['shipping_address1'];
-$shipping_address2  = $_POST['shipping_address2'];
-$shipping_city  = $_POST['shipping_city'];
-$shipping_state  = $_POST['shipping_state'];
-$shipping_zip  = $_POST['shipping_zip'];
-$shipping_country  = $_POST['shipping_country'];
- $jsonresponse =  NewLeadKonnective($campaign_id='1',$first_name,$last_name,$shipping_address1,$shipping_address2,$shipping_city,$shipping_state,$shipping_zip,$shipping_country,$phone,$email,$AFID = '',$SID= '' ,$AFFID='',$C1='',$C2='',$C3='',$AID='',$OPT='',$click_id='',$notes='');
- $response = json_decode($jsonresponse, TRUE);
-	  if(!empty($response)){
-		 if($response['result'] == "ERROR"){
-			 echo json_encode($response);
-		 }
-		 if($response['result'] == "SUCCESS"){
-			$_SESSION["order_info"] = json_encode($response['message']);
-			$_SESSION["post_info"] = json_encode($_POST);
-			  echo json_encode($response);
-		 }  
-	  }
-	}	
+$shipping_address1  = $_POST['address1'];
+//$shipping_address2  = $_POST['shipping_address2'];
+$shipping_address2  = '';
+$shipping_city  = $_POST['city1'];
+$shipping_state  = $_POST['state1'];
+$shipping_zip  = $_POST['zip'];
+$shipping_country  = $_POST['country'];
+$jsonresponse =  NewLeadKonnective($campaign_id='213',$first_name,$last_name,$shipping_address1,$shipping_address2,$shipping_city,$shipping_state,$shipping_zip,$shipping_country,$phone,$email,$AFID = '',$SID= '' ,$AFFID='',$C1='',$C2='',$C3='',$AID='',$OPT='',$click_id='',$notes='');
+$response = json_decode($jsonresponse, TRUE);
+if(!empty($response)){
+	if($response['result'] == "ERROR"){
+	$errorMessage = "Please fix the following errors:<br>".$jsonresponse->message;
+	$order_id = 'mode=failure';
+	$url = $campaign_path.'checkout.php?orderId='.$orderId.'&errorMessage='.$errorMessage;
+
+	header("Location:$url");
+	die();
+	}
+	if($response['result'] == "SUCCESS"){
+		$_SESSION["order_info"] = json_encode($response['message']);
+		$_SESSION["post_info"] = json_encode($_POST);
+		$_SESSION["card_info"] = json_encode($_POST['purchase']);
+		//echo json_encode($response);
+		$productId = '3817';
+		$jsonresponse = NewOrderWithLeadKonnective($productId, NULL, $shipping_price = NULL);
+		$response = json_decode($jsonresponse, TRUE);
+		if(!empty($response)){
+			if($response['result'] == "ERROR"){
+				echo json_encode($response);
+			}
+			if($response['result'] == "SUCCESS"){
+				$_SESSION["order_id"] = json_encode($response['message']);
+				echo json_encode($response['result']);
+			}  
+		} 
+
+	}  
+}	
 if(isset($_POST['preauthorder'])){	
 $cardNumber  = $_POST['card_num'];
 $cardSecurityCode = $_POST['cvc'];
