@@ -68,13 +68,17 @@ We've sent a confirmation email to your inbox and you will receive your login vi
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_subheadline-16534" data-de-type="headline" data-de-editing="false" data-title="sub-headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false" style="margin-top: 40px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 deUppercase" style="text-align: left; font-size: 20px;" data-bold="inherit" data-gramm="false" contenteditable="false"><b>
-Order Details</b></div>
+Order Details:&nbsp; <?php echo $_REQUEST['orderId'] ?></b></div>
 </div>
 <div class="de clearfix elOrderProductOptionsWrapper elMargin0 ui-droppable de-editable" id="tmp_orconfirmation-71557" data-de-type="orconfirmation" data-de-editing="false" data-title="Order Summary" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; cursor: pointer; outline: none; display: block;" aria-disabled="false">
 <div class="cart-box">
 <div class="clearfix elOrderProductOptinLabel">
 <div class="pull-left elOrderProductOptinItem">Product</div>
 <div class="pull-right elOrderProductOptinLabelPrice">Price</div>
+</div>
+<div class="clearfix "></div>
+<div class="pull-left elOrderProductOptinItem">Discount Club USA Membership</div>
+<div class="pull-right elOrderProductOptinLabelPrice">$4.95/ Month</div>
 </div>
 <div>
 </div>

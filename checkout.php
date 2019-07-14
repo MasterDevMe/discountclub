@@ -1081,27 +1081,9 @@ CFFacebookMessengerCheckbox.endpoint = "https://app.clickfunnels.com/facebook_us
   $(document).ready(function () { 
      
   $('#orderbtn').click(function (){
-    // if(validate_form())
-    // {
-    //   event.preventDefault();
-    //   $.post(
-    //     "<?php  echo "//".$_SERVER['SERVER_NAME']."/konnective.php"; ?>",
-    //       $('#orderform' ).serialize(),
-    //       function(data){
-    //       var response = JSON.parse(data);
-    //       if(response.result == "ERROR"){
-    //         $('#LoadingDiv').css('display','none');
-    //         //alert(response.message);
-    //       }
-    //       if(response.result == "SUCCESS"){ 
-    //         $('#LoadingDiv').css('display','none');								
-    //         $('.step_step1').css('display','none');
-    //         $('.step_step2').css('display','block');
-    //         $('.StepProgress').addClass('foo');
-    //       }
-    //       }
-    //   )
-    // }
+
+    //   "<?php  echo "//".$_SERVER['SERVER_NAME']."/konnective.php"; ?>",
+
     $( "#orderform" ).submit();
   });
        

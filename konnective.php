@@ -556,7 +556,8 @@ if(!empty($response)){
 			}
 			if($response['result'] == "SUCCESS"){
 				$_SESSION["order_id"] = json_encode($response['message']);
-				$url = $campaign_path.'thanks.html';
+				$order_id = $response['message']['orderId'];
+				$url = $campaign_path.'thanks.php?orderId='.$order_id;
 				header("Location:$url");
 			}  
 		} 
